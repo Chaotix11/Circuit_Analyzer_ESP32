@@ -1,0 +1,391 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\chaot\OneDrive\Desktop\ESP32_circuit_analyzer\main\ESP32_circuit_analyzer\build\esp32_boilerplate.elf C:\Users\chaot\OneDrive\Desktop\ESP32_circuit_analyzer\main\ESP32_circuit_analyzer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configs�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15836
+ho 0 tail 12 room 4
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (29) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug  9 2026 15:19:20[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1cb90h (117648) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002cbb8 vaddr=3ffb0000 size=03460h ( 13408) load[0m
+[0;32mI (133) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8d4d0h (578768) map[0m
+[0;32mI (331) esp_image: segment 3: paddr=000bd4f8 vaddr=3ffb3460 size=01340h (  4928) load[0m
+[0;32mI (334) esp_image: segment 4: paddr=000be840 vaddr=40080000 size=1b5a8h (112040) load[0m
+[0;32mI (379) esp_image: segment 5: paddr=000d9df0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (393) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (393) boot: Disabling RNG early entropy source...[0m
+[0;32mI (404) cpu_start: Multicore app[0m
+[0;32mI (412) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (412) cpu_start: Pro cpu start user code[0m
+[0;32mI (412) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (418) app_init: Project name:     esp32_boilerplate[0m
+[0;32mI (423) app_init: App version:      1[0m
+[0;32mI (426) app_init: Compile time:     Aug  8 2026 16:47:49[0m
+[0;32mI (431) app_init: ELF file SHA256:  fc3123691...[0m
+[0;32mI (435) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (447) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (451) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (457) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFC21D8 len 0001DE28 (119 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (473) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (478) heap_init: At 4009B5A8 len 00004A58 (18 KiB): IRAM[0m
+[0;32mI (485) spi_flash: detected chip: generic[0m
+[0;32mI (487) spi_flash: flash io: dio[0m
+[0;33mW (490) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (501) main_task: Started on CPU0[0m
+[0;32mI (501) main_task: Calling app_main()[0m
+[0;33mW (521) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;32mI (541) wifi:wifi driver task: 3ffcaacc, prio:23, stack:6656, core=0[0m
+[0;32mI (551) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (551) wifi:wifi certification version: v7.0[0m
+[0;32mI (551) wifi:config NVS flash: enabled[0m
+[0;32mI (551) wifi:config nano formatting: disabled[0m
+[0;32mI (551) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (561) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (561) wifi:Init management short buffer num: 32[0m
+[0;32mI (561) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (571) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (571) wifi:Init static rx buffer num: 10[0m
+[0;32mI (581) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (581) wifi_init: rx ba win: 6[0m
+[0;32mI (581) wifi_init: accept mbox: 6[0m
+[0;32mI (591) wifi_init: tcpip mbox: 32[0m
+[0;32mI (591) wifi_init: udp mbox: 6[0m
+[0;32mI (591) wifi_init: tcp mbox: 6[0m
+[0;32mI (591) wifi_init: tcp tx win: 5760[0m
+[0;32mI (601) wifi_init: tcp rx win: 5760[0m
+[0;32mI (601) wifi_init: tcp mss: 1440[0m
+[0;32mI (601) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (611) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (611) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (621) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (701) wifi:mode : sta (b4:bf:e9:61:bd:0c)[0m
+[0;32mI (701) wifi:enable tsf[0m
+[0;33mW (701) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (701) SPI: STM32 handshake failed[0m
+[1;31mE (711) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;32mI (711) main_task: Returned from app_main()[0m
+[0;32mI (721) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (721) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (741) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (741) SPI: STM32 handshake failed[0m
+[1;31mE (741) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (771) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (771) SPI: STM32 handshake failed[0m
+[1;31mE (771) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (801) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (801) SPI: STM32 handshake failed[0m
+[1;31mE (801) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (831) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (831) SPI: STM32 handshake failed[0m
+[1;31mE (831) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (861) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (861) SPI: STM32 handshake failed[0m
+[1;31mE (861) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (891) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (891) SPI: STM32 handshake failed[0m
+[1;31mE (891) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (921) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (921) SPI: STM32 handshake failed[0m
+[1;31mE (921) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (951) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (951) SPI: STM32 handshake failed[0m
+[1;31mE (951) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (981) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (981) SPI: STM32 handshake failed[0m
+[1;31mE (981) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1011) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1011) SPI: STM32 handshake failed[0m
+[1;31mE (1011) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1041) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1041) SPI: STM32 handshake failed[0m
+[1;31mE (1041) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1071) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1071) SPI: STM32 handshake failed[0m
+[1;31mE (1071) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1101) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1101) SPI: STM32 handshake failed[0m
+[1;31mE (1101) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1131) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1131) SPI: STM32 handshake failed[0m
+[1;31mE (1131) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1161) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1161) SPI: STM32 handshake failed[0m
+[1;31mE (1161) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1191) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1191) SPI: STM32 handshake failed[0m
+[1;31mE (1191) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1221) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1221) SPI: STM32 handshake failed[0m
+[1;31mE (1221) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1251) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1251) SPI: STM32 handshake failed[0m
+[1;31mE (1251) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1281) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1281) SPI: STM32 handshake failed[0m
+[1;31mE (1281) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1311) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1311) SPI: STM32 handshake failed[0m
+[1;31mE (1311) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1341) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1341) SPI: STM32 handshake failed[0m
+[1;31mE (1341) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1371) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1371) SPI: STM32 handshake failed[0m
+[1;31mE (1371) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1401) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1401) SPI: STM32 handshake failed[0m
+[1;31mE (1401) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1431) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1431) SPI: STM32 handshake failed[0m
+[1;31mE (1431) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1461) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1461) SPI: STM32 handshake failed[0m
+[1;31mE (1461) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1491) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1491) SPI: STM32 handshake failed[0m
+[1;31mE (1491) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1521) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1521) SPI: STM32 handshake failed[0m
+[1;31mE (1521) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1551) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1551) SPI: STM32 handshake failed[0m
+[1;31mE (1551) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1581) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1581) SPI: STM32 handshake failed[0m
+[1;31mE (1581) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1611) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1611) SPI: STM32 handshake failed[0m
+[1;31mE (1611) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1641) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1641) SPI: STM32 handshake failed[0m
+[1;31mE (1641) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1671) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1671) SPI: STM32 handshake failed[0m
+[1;31mE (1671) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1701) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1701) SPI: STM32 handshake failed[0m
+[1;31mE (1701) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;32mI (1731) wifi:state: auth -> init (0x200)[0m
+[0;33mW (1731) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1731) SPI: STM32 handshake failed[0m
+[1;31mE (1731) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1761) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1761) SPI: STM32 handshake failed[0m
+[1;31mE (1761) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1791) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1791) SPI: STM32 handshake failed[0m
+[1;31mE (1791) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1821) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1821) SPI: STM32 handshake failed[0m
+[1;31mE (1821) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1851) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1851) SPI: STM32 handshake failed[0m
+[1;31mE (1851) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1881) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1881) SPI: STM32 handshake failed[0m
+[1;31mE (1881) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1911) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1911) SPI: STM32 handshake failed[0m
+[1;31mE (1911) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1941) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1941) SPI: STM32 handshake failed[0m
+[1;31mE (1941) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (1971) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (1971) SPI: STM32 handshake failed[0m
+[1;31mE (1971) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2001) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2001) SPI: STM32 handshake failed[0m
+[1;31mE (2001) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2031) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2031) SPI: STM32 handshake failed[0m
+[1;31mE (2031) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2061) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2061) SPI: STM32 handshake failed[0m
+[1;31mE (2061) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2091) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2091) SPI: STM32 handshake failed[0m
+[1;31mE (2091) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2121) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2121) SPI: STM32 handshake failed[0m
+[1;31mE (2121) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2151) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2151) SPI: STM32 handshake failed[0m
+[1;31mE (2151) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2181) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2181) SPI: STM32 handshake failed[0m
+[1;31mE (2181) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2211) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2211) SPI: STM32 handshake failed[0m
+[1;31mE (2211) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2241) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2241) SPI: STM32 handshake failed[0m
+[1;31mE (2241) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2271) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2271) SPI: STM32 handshake failed[0m
+[1;31mE (2271) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2301) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2301) SPI: STM32 handshake failed[0m
+[1;31mE (2301) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2331) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2331) SPI: STM32 handshake failed[0m
+[1;31mE (2331) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2361) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2361) SPI: STM32 handshake failed[0m
+[1;31mE (2361) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2391) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2391) SPI: STM32 handshake failed[0m
+[1;31mE (2391) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2421) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2421) SPI: STM32 handshake failed[0m
+[1;31mE (2421) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2451) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2451) SPI: STM32 handshake failed[0m
+[1;31mE (2451) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2481) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2481) SPI: STM32 handshake failed[0m
+[1;31mE (2481) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2511) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2511) SPI: STM32 handshake failed[0m
+[1;31mE (2511) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2541) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2541) SPI: STM32 handshake failed[0m
+[1;31mE (2541) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2571) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2571) SPI: STM32 handshake failed[0m
+[1;31mE (2571) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2601) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2601) SPI: STM32 handshake failed[0m
+[1;31mE (2601) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2631) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2631) SPI: STM32 handshake failed[0m
+[1;31mE (2631) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2661) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2661) SPI: STM32 handshake failed[0m
+[1;31mE (2661) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2691) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2691) SPI: STM32 handshake failed[0m
+[1;31mE (2691) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2721) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2721) SPI: STM32 handshake failed[0m
+[1;31mE (2721) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2751) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2751) SPI: STM32 handshake failed[0m
+[1;31mE (2751) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2781) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2781) SPI: STM32 handshake failed[0m
+[1;31mE (2781) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2811) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2811) SPI: STM32 handshake failed[0m
+[1;31mE (2811) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2841) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2841) SPI: STM32 handshake failed[0m
+[1;31mE (2841) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2871) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2871) SPI: STM32 handshake failed[0m
+[1;31mE (2871) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2901) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2901) SPI: STM32 handshake failed[0m
+[1;31mE (2901) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2931) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2931) SPI: STM32 handshake failed[0m
+[1;31mE (2931) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2961) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2961) SPI: STM32 handshake failed[0m
+[1;31mE (2961) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (2991) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (2991) SPI: STM32 handshake failed[0m
+[1;31mE (2991) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3021) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3021) SPI: STM32 handshake failed[0m
+[1;31mE (3021) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3051) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3051) SPI: STM32 handshake failed[0m
+[1;31mE (3051) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3081) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3081) SPI: STM32 handshake failed[0m
+[1;31mE (3081) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3111) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3111) SPI: STM32 handshake failed[0m
+[1;31mE (3111) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3141) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3141) SPI: STM32 handshake failed[0m
+[1;31mE (3141) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3171) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3171) SPI: STM32 handshake failed[0m
+[1;31mE (3171) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3201) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3201) SPI: STM32 handshake failed[0m
+[1;31mE (3201) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3231) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3231) SPI: STM32 handshake failed[0m
+[1;31mE (3231) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3261) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3261) SPI: STM32 handshake failed[0m
+[1;31mE (3261) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3291) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3291) SPI: STM32 handshake failed[0m
+[1;31mE (3291) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3321) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3321) SPI: STM32 handshake failed[0m
+[1;31mE (3321) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3351) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3351) SPI: STM32 handshake failed[0m
+[1;31mE (3351) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3381) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3381) SPI: STM32 handshake failed[0m
+[1;31mE (3381) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3411) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3411) SPI: STM32 handshake failed[0m
+[1;31mE (3411) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3441) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3441) SPI: STM32 handshake failed[0m
+[1;31mE (3441) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3471) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3471) SPI: STM32 handshake failed[0m
+[1;31mE (3471) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3501) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3501) SPI: STM32 handshake failed[0m
+[1;31mE (3501) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3531) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3531) SPI: STM32 handshake failed[0m
+[1;31mE (3531) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3561) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3561) SPI: STM32 handshake failed[0m
+[1;31mE (3561) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3591) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3591) SPI: STM32 handshake failed[0m
+[1;31mE (3591) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3621) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3621) SPI: STM32 handshake failed[0m
+[1;31mE (3621) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3651) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3651) SPI: STM32 handshake failed[0m
+[1;31mE (3651) SPI: Failed to pull STM32 buffer: ESP_ERR_NOT_FOUND[0m
+[0;33mW (3681) SPI: HANDSHAKE TX=0x00 RX=0x00 EXPECTED=0xA5[0m
+[0;33mW (3681) SPI: STM32 handshake failed[0m

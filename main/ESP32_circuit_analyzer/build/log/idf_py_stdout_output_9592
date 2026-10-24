@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] C:\windows\system32\cmd.exe /C "cd /D C:\Users\chaot\OneDrive\Desktop\ESP32_circuit_analyzer\main\ESP32_circuit_analyzer\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/build/partition_table/partition-table.bin C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/build/esp32_boilerplate.bin"
+esp32_boilerplate.bin binary size 0xc9e40 bytes. Smallest app partition is 0x100000 bytes. 0x361c0 bytes (21%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] C:\windows\system32\cmd.exe /C "cd /D C:\Users\chaot\OneDrive\Desktop\ESP32_circuit_analyzer\main\ESP32_circuit_analyzer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

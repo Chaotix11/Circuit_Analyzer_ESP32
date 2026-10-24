@@ -1,0 +1,873 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-igs8n7"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-igs8n7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-igs8n7'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_1358e
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_1358e.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe" -cc1 -triple riscv32-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu generic-rv32 -target-feature +m -target-feature +a -target-feature +c -target-feature +zmmul -target-feature -b -target-feature -d -target-feature -e -target-feature -f -target-feature -h -target-feature -shcounterenw -target-feature -shgatpa -target-feature -shtvala -target-feature -shvsatpa -target-feature -shvstvala -target-feature -shvstvecd -target-feature -smaia -target-feature -smcdeleg -target-feature -smcsrind -target-feature -smepmp -target-feature -smstateen -target-feature -ssaia -target-feature -ssccfg -target-feature -ssccptr -target-feature -sscofpmf -target-feature -sscounterenw -target-feature -sscsrind -target-feature -ssstateen -target-feature -ssstrict -target-feature -sstc -target-feature -sstvala -target-feature -sstvecd -target-feature -ssu64xl -target-feature -svade -target-feature -svadu -target-feature -svbare -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvelw -target-feature -xcvmac -target-feature -xcvmem -target-feature -xcvsimd -target-feature -xesppie -target-feature -xsfcease -target-feature -xsfvcp -target-feature -xsfvfnrclipxfqf -target-feature -xsfvfwmaccqqq -target-feature -xsfvqmaccdod -target-feature -xsfvqmaccqoq -target-feature -xsifivecdiscarddlone -target-feature -xsifivecflushdlone -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -xwchc -target-feature -za128rs -target-feature -za64rs -target-feature -zaamo -target-feature -zabha -target-feature -zalrsc -target-feature -zama16b -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmop -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfbfmin -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zic64b -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -ziccamoa -target-feature -ziccif -target-feature -zicclsm -target-feature -ziccrse -target-feature -zicntr -target-feature -zicond -target-feature -zicsr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zimop -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -ztso -target-feature -zvbb -target-feature -zvbc -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfbfmin -target-feature -zvfbfwma -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvkb -target-feature -zvkg -target-feature -zvkn -target-feature -zvknc -target-feature -zvkned -target-feature -zvkng -target-feature -zvknha -target-feature -zvknhb -target-feature -zvks -target-feature -zvksc -target-feature -zvksed -target-feature -zvksg -target-feature -zvksh -target-feature -zvkt -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smmpm -target-feature -experimental-smnpm -target-feature -experimental-ssnpm -target-feature -experimental-sspm -target-feature -experimental-ssqosid -target-feature -experimental-supm -target-feature -experimental-zacas -target-feature -experimental-zalasr -target-feature -experimental-zicfilp -target-feature -experimental-zicfiss -target-feature +relax -target-abi ilp32 -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-igs8n7 -v -fcoverage-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-igs8n7 -resource-dir C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_1358e.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -x c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf\x0d
+        ignoring duplicate directory "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -o cmTC_1358e.exe -Wl,--out-implib,libcmTC_1358e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_1358e.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj -o cmTC_1358e.exe -Wl,--out-implib,libcmTC_1358e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld" -m elf32lriscv -o cmTC_1358e.exe -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o -v CMakeFiles/cmTC_1358e.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1358e.dll.a --major-image-version 0 --minor-image-version 0 -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        LLD 19.1.2 (compatible with GNU linkers)
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-yj62i1"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-yj62i1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-yj62i1'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_e4d4d
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe    -MD -MT CMakeFiles/cmTC_e4d4d.dir/testCCompiler.c.obj -MF CMakeFiles\\cmTC_e4d4d.dir\\testCCompiler.c.obj.d -o CMakeFiles/cmTC_e4d4d.dir/testCCompiler.c.obj -c C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-yj62i1/testCCompiler.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_e4d4d.dir/testCCompiler.c.obj -o cmTC_e4d4d.exe -Wl,--out-implib,libcmTC_e4d4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_e4d4d.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_e4d4d.dir/testCCompiler.c.obj -o cmTC_e4d4d.exe -Wl,--out-implib,libcmTC_e4d4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: unable to find library -lkernel32
+        ld.lld: error: unable to find library -luser32
+        ld.lld: error: unable to find library -lgdi32
+        ld.lld: error: unable to find library -lwinspool
+        ld.lld: error: unable to find library -lshell32
+        ld.lld: error: unable to find library -lole32
+        ld.lld: error: unable to find library -loleaut32
+        ld.lld: error: unable to find library -luuid
+        ld.lld: error: unable to find library -lcomdlg32\x0d
+        ld.lld: error: unable to find library -ladvapi32\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ygren7"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ygren7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ygren7'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_4512b
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_4512b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe" -cc1 -triple riscv32-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu generic-rv32 -target-feature +m -target-feature +a -target-feature +c -target-feature +zmmul -target-feature -b -target-feature -d -target-feature -e -target-feature -f -target-feature -h -target-feature -shcounterenw -target-feature -shgatpa -target-feature -shtvala -target-feature -shvsatpa -target-feature -shvstvala -target-feature -shvstvecd -target-feature -smaia -target-feature -smcdeleg -target-feature -smcsrind -target-feature -smepmp -target-feature -smstateen -target-feature -ssaia -target-feature -ssccfg -target-feature -ssccptr -target-feature -sscofpmf -target-feature -sscounterenw -target-feature -sscsrind -target-feature -ssstateen -target-feature -ssstrict -target-feature -sstc -target-feature -sstvala -target-feature -sstvecd -target-feature -ssu64xl -target-feature -svade -target-feature -svadu -target-feature -svbare -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvelw -target-feature -xcvmac -target-feature -xcvmem -target-feature -xcvsimd -target-feature -xesppie -target-feature -xsfcease -target-feature -xsfvcp -target-feature -xsfvfnrclipxfqf -target-feature -xsfvfwmaccqqq -target-feature -xsfvqmaccdod -target-feature -xsfvqmaccqoq -target-feature -xsifivecdiscarddlone -target-feature -xsifivecflushdlone -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -xwchc -target-feature -za128rs -target-feature -za64rs -target-feature -zaamo -target-feature -zabha -target-feature -zalrsc -target-feature -zama16b -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmop -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfbfmin -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zic64b -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -ziccamoa -target-feature -ziccif -target-feature -zicclsm -target-feature -ziccrse -target-feature -zicntr -target-feature -zicond -target-feature -zicsr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zimop -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -ztso -target-feature -zvbb -target-feature -zvbc -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfbfmin -target-feature -zvfbfwma -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvkb -target-feature -zvkg -target-feature -zvkn -target-feature -zvknc -target-feature -zvkned -target-feature -zvkng -target-feature -zvknha -target-feature -zvknhb -target-feature -zvks -target-feature -zvksc -target-feature -zvksed -target-feature -zvksg -target-feature -zvksh -target-feature -zvkt -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smmpm -target-feature -experimental-smnpm -target-feature -experimental-ssnpm -target-feature -experimental-sspm -target-feature -experimental-ssqosid -target-feature -experimental-supm -target-feature -experimental-zacas -target-feature -experimental-zalasr -target-feature -experimental-zicfilp -target-feature -experimental-zicfiss -target-feature +relax -target-abi ilp32 -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ygren7 -v -fcoverage-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ygren7 -resource-dir C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_4512b.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -x c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf\x0d
+        ignoring duplicate directory "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -o cmTC_4512b.exe -Wl,--out-implib,libcmTC_4512b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_4512b.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj -o cmTC_4512b.exe -Wl,--out-implib,libcmTC_4512b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld" -m elf32lriscv -o cmTC_4512b.exe -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o -v CMakeFiles/cmTC_4512b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_4512b.dll.a --major-image-version 0 --minor-image-version 0 -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        LLD 19.1.2 (compatible with GNU linkers)
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-w2kfiy"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-w2kfiy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-w2kfiy'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_13fe1
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe    -MD -MT CMakeFiles/cmTC_13fe1.dir/testCCompiler.c.obj -MF CMakeFiles\\cmTC_13fe1.dir\\testCCompiler.c.obj.d -o CMakeFiles/cmTC_13fe1.dir/testCCompiler.c.obj -c C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-w2kfiy/testCCompiler.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_13fe1.dir/testCCompiler.c.obj -o cmTC_13fe1.exe -Wl,--out-implib,libcmTC_13fe1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_13fe1.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_13fe1.dir/testCCompiler.c.obj -o cmTC_13fe1.exe -Wl,--out-implib,libcmTC_13fe1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: unable to find library -lkernel32
+        ld.lld: error: unable to find library -luser32
+        ld.lld: error: unable to find library -lgdi32
+        ld.lld: error: unable to find library -lwinspool
+        ld.lld: error: unable to find library -lshell32
+        ld.lld: error: unable to find library -lole32
+        ld.lld: error: unable to find library -loleaut32
+        ld.lld: error: unable to find library -luuid
+        ld.lld: error: unable to find library -lcomdlg32\x0d
+        ld.lld: error: unable to find library -ladvapi32\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang++: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ww5dnd"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ww5dnd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ww5dnd'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_88e6a
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_88e6a.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe" -cc1 -triple riscv32-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu generic-rv32 -target-feature +m -target-feature +a -target-feature +c -target-feature +zmmul -target-feature -b -target-feature -d -target-feature -e -target-feature -f -target-feature -h -target-feature -shcounterenw -target-feature -shgatpa -target-feature -shtvala -target-feature -shvsatpa -target-feature -shvstvala -target-feature -shvstvecd -target-feature -smaia -target-feature -smcdeleg -target-feature -smcsrind -target-feature -smepmp -target-feature -smstateen -target-feature -ssaia -target-feature -ssccfg -target-feature -ssccptr -target-feature -sscofpmf -target-feature -sscounterenw -target-feature -sscsrind -target-feature -ssstateen -target-feature -ssstrict -target-feature -sstc -target-feature -sstvala -target-feature -sstvecd -target-feature -ssu64xl -target-feature -svade -target-feature -svadu -target-feature -svbare -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvelw -target-feature -xcvmac -target-feature -xcvmem -target-feature -xcvsimd -target-feature -xesppie -target-feature -xsfcease -target-feature -xsfvcp -target-feature -xsfvfnrclipxfqf -target-feature -xsfvfwmaccqqq -target-feature -xsfvqmaccdod -target-feature -xsfvqmaccqoq -target-feature -xsifivecdiscarddlone -target-feature -xsifivecflushdlone -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -xwchc -target-feature -za128rs -target-feature -za64rs -target-feature -zaamo -target-feature -zabha -target-feature -zalrsc -target-feature -zama16b -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmop -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfbfmin -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zic64b -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -ziccamoa -target-feature -ziccif -target-feature -zicclsm -target-feature -ziccrse -target-feature -zicntr -target-feature -zicond -target-feature -zicsr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zimop -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -ztso -target-feature -zvbb -target-feature -zvbc -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfbfmin -target-feature -zvfbfwma -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvkb -target-feature -zvkg -target-feature -zvkn -target-feature -zvknc -target-feature -zvkned -target-feature -zvkng -target-feature -zvknha -target-feature -zvknhb -target-feature -zvks -target-feature -zvksc -target-feature -zvksed -target-feature -zvksg -target-feature -zvksh -target-feature -zvkt -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smmpm -target-feature -experimental-smnpm -target-feature -experimental-ssnpm -target-feature -experimental-sspm -target-feature -experimental-ssqosid -target-feature -experimental-supm -target-feature -experimental-zacas -target-feature -experimental-zalasr -target-feature -experimental-zicfilp -target-feature -experimental-zicfiss -target-feature +relax -target-abi ilp32 -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ww5dnd -v -fcoverage-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-ww5dnd -resource-dir C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_88e6a.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -x c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf\x0d
+        ignoring duplicate directory "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -o cmTC_88e6a.exe -Wl,--out-implib,libcmTC_88e6a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_88e6a.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj -o cmTC_88e6a.exe -Wl,--out-implib,libcmTC_88e6a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld" -m elf32lriscv -o cmTC_88e6a.exe -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o -v CMakeFiles/cmTC_88e6a.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_88e6a.dll.a --major-image-version 0 --minor-image-version 0 -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        LLD 19.1.2 (compatible with GNU linkers)
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8hhd54"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8hhd54"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8hhd54'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_2f201
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe    -MD -MT CMakeFiles/cmTC_2f201.dir/testCCompiler.c.obj -MF CMakeFiles\\cmTC_2f201.dir\\testCCompiler.c.obj.d -o CMakeFiles/cmTC_2f201.dir/testCCompiler.c.obj -c C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8hhd54/testCCompiler.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_2f201.dir/testCCompiler.c.obj -o cmTC_2f201.exe -Wl,--out-implib,libcmTC_2f201.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_2f201.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_2f201.dir/testCCompiler.c.obj -o cmTC_2f201.exe -Wl,--out-implib,libcmTC_2f201.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: unable to find library -lkernel32
+        ld.lld: error: unable to find library -luser32
+        ld.lld: error: unable to find library -lgdi32
+        ld.lld: error: unable to find library -lwinspool
+        ld.lld: error: unable to find library -lshell32
+        ld.lld: error: unable to find library -lole32
+        ld.lld: error: unable to find library -loleaut32
+        ld.lld: error: unable to find library -luuid
+        ld.lld: error: unable to find library -lcomdlg32\x0d
+        ld.lld: error: unable to find library -ladvapi32\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang++: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-sv4dlh"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-sv4dlh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-sv4dlh'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_91167
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_91167.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe" -cc1 -triple riscv32-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu generic-rv32 -target-feature +m -target-feature +a -target-feature +c -target-feature +zmmul -target-feature -b -target-feature -d -target-feature -e -target-feature -f -target-feature -h -target-feature -shcounterenw -target-feature -shgatpa -target-feature -shtvala -target-feature -shvsatpa -target-feature -shvstvala -target-feature -shvstvecd -target-feature -smaia -target-feature -smcdeleg -target-feature -smcsrind -target-feature -smepmp -target-feature -smstateen -target-feature -ssaia -target-feature -ssccfg -target-feature -ssccptr -target-feature -sscofpmf -target-feature -sscounterenw -target-feature -sscsrind -target-feature -ssstateen -target-feature -ssstrict -target-feature -sstc -target-feature -sstvala -target-feature -sstvecd -target-feature -ssu64xl -target-feature -svade -target-feature -svadu -target-feature -svbare -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvelw -target-feature -xcvmac -target-feature -xcvmem -target-feature -xcvsimd -target-feature -xesppie -target-feature -xsfcease -target-feature -xsfvcp -target-feature -xsfvfnrclipxfqf -target-feature -xsfvfwmaccqqq -target-feature -xsfvqmaccdod -target-feature -xsfvqmaccqoq -target-feature -xsifivecdiscarddlone -target-feature -xsifivecflushdlone -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -xwchc -target-feature -za128rs -target-feature -za64rs -target-feature -zaamo -target-feature -zabha -target-feature -zalrsc -target-feature -zama16b -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmop -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfbfmin -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zic64b -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -ziccamoa -target-feature -ziccif -target-feature -zicclsm -target-feature -ziccrse -target-feature -zicntr -target-feature -zicond -target-feature -zicsr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zimop -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -ztso -target-feature -zvbb -target-feature -zvbc -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfbfmin -target-feature -zvfbfwma -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvkb -target-feature -zvkg -target-feature -zvkn -target-feature -zvknc -target-feature -zvkned -target-feature -zvkng -target-feature -zvknha -target-feature -zvknhb -target-feature -zvks -target-feature -zvksc -target-feature -zvksed -target-feature -zvksg -target-feature -zvksh -target-feature -zvkt -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smmpm -target-feature -experimental-smnpm -target-feature -experimental-ssnpm -target-feature -experimental-sspm -target-feature -experimental-ssqosid -target-feature -experimental-supm -target-feature -experimental-zacas -target-feature -experimental-zalasr -target-feature -experimental-zicfilp -target-feature -experimental-zicfiss -target-feature +relax -target-abi ilp32 -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-sv4dlh -v -fcoverage-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-sv4dlh -resource-dir C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_91167.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -x c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf\x0d
+        ignoring duplicate directory "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -o cmTC_91167.exe -Wl,--out-implib,libcmTC_91167.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_91167.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj -o cmTC_91167.exe -Wl,--out-implib,libcmTC_91167.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld" -m elf32lriscv -o cmTC_91167.exe -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o -v CMakeFiles/cmTC_91167.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_91167.dll.a --major-image-version 0 --minor-image-version 0 -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        LLD 19.1.2 (compatible with GNU linkers)
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-whw0iv"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-whw0iv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-whw0iv'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_633c9
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe    -MD -MT CMakeFiles/cmTC_633c9.dir/testCCompiler.c.obj -MF CMakeFiles\\cmTC_633c9.dir\\testCCompiler.c.obj.d -o CMakeFiles/cmTC_633c9.dir/testCCompiler.c.obj -c C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-whw0iv/testCCompiler.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_633c9.dir/testCCompiler.c.obj -o cmTC_633c9.exe -Wl,--out-implib,libcmTC_633c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_633c9.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_633c9.dir/testCCompiler.c.obj -o cmTC_633c9.exe -Wl,--out-implib,libcmTC_633c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: unable to find library -lkernel32
+        ld.lld: error: unable to find library -luser32
+        ld.lld: error: unable to find library -lgdi32
+        ld.lld: error: unable to find library -lwinspool
+        ld.lld: error: unable to find library -lshell32
+        ld.lld: error: unable to find library -lole32
+        ld.lld: error: unable to find library -loleaut32
+        ld.lld: error: unable to find library -luuid
+        ld.lld: error: unable to find library -lcomdlg32\x0d
+        ld.lld: error: unable to find library -ladvapi32\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      PLEASE submit a bug report to https://github.com/espressif/esp-llvm-embedded-toolchain/issues and include the crash backtrace.
+      Stack dump:
+      0.	Program arguments: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld -m elf32lriscv -o a.out -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o C:/Users/chaot/AppData/Local/Temp/CMakeCCompilerId-5651dc.o -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+      Exception Code: 0xC0000005
+       #0 0x00007ff9ffeeec26 (C:\\windows\\SYSTEM32\\ntdll.dll+0xec26)
+       #1 0x00007ff9fff3a3a1 (C:\\windows\\SYSTEM32\\ntdll.dll+0x5a3a1)
+       #2 0x00007ff9fff33a10 (C:\\windows\\SYSTEM32\\ntdll.dll+0x53a10)
+       #3 0x00007ff9fe45d60c (C:\\windows\\System32\\msvcrt.dll+0x1d60c)
+       #4 0x00007ff9fe45cca6 (C:\\windows\\System32\\msvcrt.dll+0x1cca6)
+       #5 0x00007ff9246baaba operator delete(void*, std::align_val_t) ./build/x86_64-w64-mingw32-posix/x86_64-w64-mingw32/libstdc++-v3/libsupc++/../../../../../src/libstdc++-v3/libsupc++/del_opa.cc:53:17
+       #6 0x00007ff6f8543079 llvm::object_deleter<llvm::cl::SubCommand>::call(void*) (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0x1143079)
+       #7 0x00007ff6f8435a54 llvm::llvm_shutdown() (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0x1035a54)
+       #8 0x00007ff6f801eaa7 lld::exitLld(int) (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0xc1eaa7)
+       #9 0x00007ff6f7e63c38 lld::unsafeLldMain(llvm::ArrayRef<char const*>, llvm::raw_ostream&, llvm::raw_ostream&, llvm::ArrayRef<lld::DriverDef>, bool) (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0xa63c38)
+      #10 0x00007ff6f7468ded lld_main(int, char**, llvm::ToolContext const&) (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0x68ded)
+      #11 0x00007ff6f9aaf4ff main (C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\ld.lld.exe+0x26af4ff)
+      #12 0x00007ff6f74013ae __tmainCRTStartup /build/./mingw-w64-crt/crt/crtexe.c:323:8
+      #13 0x00007ff6f74014e6 .l_start /build/./mingw-w64-crt/crt/crtexe.c:204:3
+      #14 0x00007ff9fe99e957 (C:\\windows\\System32\\KERNEL32.DLL+0x2e957)
+      #15 0x00007ff9fff8ad6c (C:\\windows\\SYSTEM32\\ntdll.dll+0xaad6c)
+      clang: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang++: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8rq5xo"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8rq5xo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8rq5xo'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_bc194
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_bc194.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe" -cc1 -triple riscv32-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu generic-rv32 -target-feature +m -target-feature +a -target-feature +c -target-feature +zmmul -target-feature -b -target-feature -d -target-feature -e -target-feature -f -target-feature -h -target-feature -shcounterenw -target-feature -shgatpa -target-feature -shtvala -target-feature -shvsatpa -target-feature -shvstvala -target-feature -shvstvecd -target-feature -smaia -target-feature -smcdeleg -target-feature -smcsrind -target-feature -smepmp -target-feature -smstateen -target-feature -ssaia -target-feature -ssccfg -target-feature -ssccptr -target-feature -sscofpmf -target-feature -sscounterenw -target-feature -sscsrind -target-feature -ssstateen -target-feature -ssstrict -target-feature -sstc -target-feature -sstvala -target-feature -sstvecd -target-feature -ssu64xl -target-feature -svade -target-feature -svadu -target-feature -svbare -target-feature -svinval -target-feature -svnapot -target-feature -svpbmt -target-feature -v -target-feature -xcvalu -target-feature -xcvbi -target-feature -xcvbitmanip -target-feature -xcvelw -target-feature -xcvmac -target-feature -xcvmem -target-feature -xcvsimd -target-feature -xesppie -target-feature -xsfcease -target-feature -xsfvcp -target-feature -xsfvfnrclipxfqf -target-feature -xsfvfwmaccqqq -target-feature -xsfvqmaccdod -target-feature -xsfvqmaccqoq -target-feature -xsifivecdiscarddlone -target-feature -xsifivecflushdlone -target-feature -xtheadba -target-feature -xtheadbb -target-feature -xtheadbs -target-feature -xtheadcmo -target-feature -xtheadcondmov -target-feature -xtheadfmemidx -target-feature -xtheadmac -target-feature -xtheadmemidx -target-feature -xtheadmempair -target-feature -xtheadsync -target-feature -xtheadvdot -target-feature -xventanacondops -target-feature -xwchc -target-feature -za128rs -target-feature -za64rs -target-feature -zaamo -target-feature -zabha -target-feature -zalrsc -target-feature -zama16b -target-feature -zawrs -target-feature -zba -target-feature -zbb -target-feature -zbc -target-feature -zbkb -target-feature -zbkc -target-feature -zbkx -target-feature -zbs -target-feature -zca -target-feature -zcb -target-feature -zcd -target-feature -zce -target-feature -zcf -target-feature -zcmop -target-feature -zcmp -target-feature -zcmt -target-feature -zdinx -target-feature -zfa -target-feature -zfbfmin -target-feature -zfh -target-feature -zfhmin -target-feature -zfinx -target-feature -zhinx -target-feature -zhinxmin -target-feature -zic64b -target-feature -zicbom -target-feature -zicbop -target-feature -zicboz -target-feature -ziccamoa -target-feature -ziccif -target-feature -zicclsm -target-feature -ziccrse -target-feature -zicntr -target-feature -zicond -target-feature -zicsr -target-feature -zifencei -target-feature -zihintntl -target-feature -zihintpause -target-feature -zihpm -target-feature -zimop -target-feature -zk -target-feature -zkn -target-feature -zknd -target-feature -zkne -target-feature -zknh -target-feature -zkr -target-feature -zks -target-feature -zksed -target-feature -zksh -target-feature -zkt -target-feature -ztso -target-feature -zvbb -target-feature -zvbc -target-feature -zve32f -target-feature -zve32x -target-feature -zve64d -target-feature -zve64f -target-feature -zve64x -target-feature -zvfbfmin -target-feature -zvfbfwma -target-feature -zvfh -target-feature -zvfhmin -target-feature -zvkb -target-feature -zvkg -target-feature -zvkn -target-feature -zvknc -target-feature -zvkned -target-feature -zvkng -target-feature -zvknha -target-feature -zvknhb -target-feature -zvks -target-feature -zvksc -target-feature -zvksed -target-feature -zvksg -target-feature -zvksh -target-feature -zvkt -target-feature -zvl1024b -target-feature -zvl128b -target-feature -zvl16384b -target-feature -zvl2048b -target-feature -zvl256b -target-feature -zvl32768b -target-feature -zvl32b -target-feature -zvl4096b -target-feature -zvl512b -target-feature -zvl64b -target-feature -zvl65536b -target-feature -zvl8192b -target-feature -experimental-smmpm -target-feature -experimental-smnpm -target-feature -experimental-ssnpm -target-feature -experimental-sspm -target-feature -experimental-ssqosid -target-feature -experimental-supm -target-feature -experimental-zacas -target-feature -experimental-zalasr -target-feature -experimental-zicfilp -target-feature -experimental-zicfiss -target-feature +relax -target-abi ilp32 -msmall-data-limit 8 -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8rq5xo -v -fcoverage-compilation-dir=C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-8rq5xo -resource-dir C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_bc194.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -x c C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf\x0d
+        ignoring duplicate directory "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include\x0d
+         C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -o cmTC_bc194.exe -Wl,--out-implib,libcmTC_bc194.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_bc194.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj -o cmTC_bc194.exe -Wl,--out-implib,libcmTC_bc194.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: riscv32-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld" -m elf32lriscv -o cmTC_bc194.exe -X C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/crt0.o -v CMakeFiles/cmTC_bc194.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bc194.dll.a --major-image-version 0 --minor-image-version 0 -LC:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib -lm --start-group -lc -lgloss -lnosys --end-group C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/riscv32-esp-unknown-elf/rv32imac-zicsr-zifencei_ilp32/lib/libclang_rt.builtins.a
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        LLD 19.1.2 (compatible with GNU linkers)
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: C:/Espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang.exe"
+    directories:
+      source: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-o8bqlu"
+      binary: "C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-o8bqlu"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-o8bqlu'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_8cae7
+        [1/2] C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe    -MD -MT CMakeFiles/cmTC_8cae7.dir/testCCompiler.c.obj -MF CMakeFiles\\cmTC_8cae7.dir\\testCCompiler.c.obj.d -o CMakeFiles/cmTC_8cae7.dir/testCCompiler.c.obj -c C:/Users/chaot/OneDrive/Desktop/ESP32_circuit_analyzer/main/ESP32_circuit_analyzer/main/build/CMakeFiles/CMakeScratch/TryCompile-o8bqlu/testCCompiler.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_8cae7.dir/testCCompiler.c.obj -o cmTC_8cae7.exe -Wl,--out-implib,libcmTC_8cae7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_8cae7.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clang.exe   CMakeFiles/cmTC_8cae7.dir/testCCompiler.c.obj -o cmTC_8cae7.exe -Wl,--out-implib,libcmTC_8cae7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        ld.lld: error: unknown argument '--major-image-version'
+        ld.lld: error: unknown argument '--minor-image-version'
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: cannot open 0: No such file or directory
+        ld.lld: error: unable to find library -lkernel32
+        ld.lld: error: unable to find library -luser32
+        ld.lld: error: unable to find library -lgdi32
+        ld.lld: error: unable to find library -lwinspool
+        ld.lld: error: unable to find library -lshell32
+        ld.lld: error: unable to find library -lole32
+        ld.lld: error: unable to find library -loleaut32
+        ld.lld: error: unable to find library -luuid
+        ld.lld: error: unable to find library -lcomdlg32\x0d
+        ld.lld: error: unable to find library -ladvapi32\x0d
+        clang: error: ld command failed with exit code 1 (use -v to see invocation)\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

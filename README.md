@@ -1,4 +1,4 @@
-#CHAOTIX11
+# CHAOTIX11
 
 Firmware for ESP 32 processor with WiFi capabilities(ESP32 DevKit1). Designed to work with STM32_Circuit_Analyzer(STM32f411CCU6) and to be processed/displayed by the Raspberry Pi 4b on the GUI- RPI_Circuit_Analyzer
 
